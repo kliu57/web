@@ -1,0 +1,111 @@
+<!--  Katie Liu -->
+<!--  018889121 -->
+<!--  kliu57@myseneca.ca -->
+<!--  WEB 222 NAA -->
+<!--  test-5-Katie-Liu.txt -->
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Katie Liu 018889121">
+        <title>Test 5</title>
+
+        <style>
+            table {
+                width: 600px;
+                border-collapse: collapse;
+            }
+            tr, th, td {
+                border: solid 1px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+
+        <main>
+            <div id="question-1">
+                <!-- Question 1 - block level element -->
+                <p class="highlight">block-level element</p>
+            
+                <!-- Question 1 - inline level element -->
+                <span class="highlight">inline element</span>
+            </div>
+
+            <div id="question-2">
+                <!-- Question 2 - empty element -->
+                <hr>
+            </div>
+
+            <div id="question-3">
+                <!-- Question 3 - ordered list of links -->
+                <nav>
+                    <ol>
+                        <li><a href="https://web222.ca">web222</a></li>
+                        <li><a href="https://web322.ca">web322</a></li>
+                        <li><a href="https://web422.ca">web422</a></li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div id="question-4">
+                <!-- Question 4 - table -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>235</td>
+                            <td>Wil Lee</td>
+                            <td rowspan="3"></td>
+                        </tr>
+                        <tr>
+                            <td>236</td>
+                            <td>Julia Clark</td>
+                        </tr>
+                        <tr>
+                            <td>237</td>
+                            <td>Rex Murphy</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="question-5">
+                <!-- Question 5 - Picture of an owl, limit to 50 pixels wide -->
+                <img src="https://nas-national-prod.s3.amazonaws.com/styles/article_hero_inline/s3/web_a1_1902_16_barred-owl_sandra_rothenberg_kk.jpg?itok=EnOn4oDh" 
+                    alt="Picture of an owl" width="500">
+            </div>
+
+            <div id="question-6">
+                <!-- Question 6 - External JavaScript file -->
+                <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+            </div>
+
+            <div id="question-7">
+                <!-- Question 7 - Audio with controls showing -->
+                <audio controls>
+                    <source src="https://datashat.net/music_for_programming_49-julien_mier.mp3" type="audio/mp3">
+                    <p>Sorry, your browser doesn't support HTML5 audio. Here is a <a href="https://datashat.net/music_for_programming_49-julien_mier.mp3">link to the audio</a> instead</p>.
+                </audio>
+            </div>
+
+            <div id="question-8">
+                <!-- Question 8 - Print name and student number to dev tools console -->
+                <script>
+                    console.log('Katie Liu');
+                    console.log('018889121');
+                </script>
+            </div>
+        </main>
+    </body>
+</html>
