@@ -2,110 +2,209 @@
 <!--  018889121 -->
 <!--  kliu57@myseneca.ca -->
 <!--  WEB 222 NAA -->
-<!--  test-5-Katie-Liu.txt -->
+<!--  index.html -->
 
 <!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
-
-        <!-- Question 10 - Include name and student number in a <meta> Author element -->
         <meta name="author" content="Katie Liu 018889121">
+        <meta name="description" content="Learn about the Cheetah">
+        <meta name="keywords" content="cheetah, endangered species, big cats, wildlife">
 
-        <title>Test 5</title>
-
-        <style>
-            table {
-                width: 600px;
-                border-collapse: collapse;
-            }
-            tr, th, td {
-                border: solid 1px;
-            }
-        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+        <title>The Cheetah - Main</title>
     </head>
 
     <body>
+        <header class="page-header">
+            <div id="site-links"><a href="index.html">MAIN</a> | <a href="about.html">ABOUT THE AUTHOR</a> | <a href="honesty.html">SOURCES</a></div>
+
+            <div id="wide-photo">
+                <p><img src="cheetah_wide.jpg" alt="Cheetahs in South Africa" width="800">
+                    <br><span class="cheetahs-in-south-africa_caption">Photo of cheetahs in South Africa, by <a href="https://unsplash.com/@marcuslofvenberg">Marcus Lfvenberg</a></span></p>
+            </div>
+
+            <figure>
+                <audio controls autoplay>
+                    <source src="https://www.bensound.com/bensound-music/bensound-memories.mp3" type="audio/mp3">
+                    <p>Sorry, your browser doesn't support HTML5 audio. Here is a 
+                        <a href="https://www.bensound.com/bensound-music/bensound-memories.mp3">link to the audio</a> instead</p>.
+                </audio>
+                <figcaption>BG Music: <a href="https://www.bensound.com/">Memories | Royalty Free Music from Bensound</a></figcaption>
+            </figure>
+            <hr>
+        </header>
+
         <main>
-            <div id="question-1">
-                <!-- Question 1 - block level element -->
-                <p class="highlight">block-level element</p>
-            
-                <!-- Question 1 - inline level element -->
-                <span class="highlight">inline element</span>
+            <div id="tableofcontents-links">
+                <a href="#intro">INTRODUCTION</a> | 
+                <a href="#speed">A CHEETAH'S SPEED</a> | 
+                <a href="#prey">HUNTING AND PREY</a> |
+                <a href="#social">SOCIAL STRUCTURE</a> | 
+                <a href="#endangered">ENDANGERMENT</a>
             </div>
 
-            <div id="question-2">
-                <!-- Question 2 - empty element -->
-                <hr>
+            <div id="intro">
+                <h1>What do you know about the cheetah?</h1>
+                <p>The <dfn id="def-cheetah">cheetah</dfn> (Acinonyx jubatus) is a large, long-legged carnivore, and a member of the cat family.
+                     They are found in Africa and small parts of Iran. The length of a cheetah can range from 40-60 inches, not including the 
+                     tail. Their height can range from 28-36 inches. Their weight ranges from 75-125 pounds. Male cheetahs are larger and female 
+                     cheetahs, but the difference is not always apparent to the untrained eye. Cheetah can be recognized by their lanky build 
+                     and spotted tan or golden fur coat. They also have unique black stripes that go from the bottom of their eye to their 
+                     mouth. Cheetahs can live on average from 10 to 12 years in the wild and 17-20 years in captivity. Cheetahs can growl, 
+                     chirp, and purr; however, they do not roar (Cheetah Conservation Fund, 2021).</p>
             </div>
 
-            <div id="question-3">
-                <!-- Question 3 - ordered list of links -->
+            <div id="speed">
+                <h2>A cheetah's speed</h2>
+                <p>A cheetah is the world's <strong>fastest</strong> land animal, with measured speeds reaching 65mph (105km/h) (Sharp, 1997). 
+                This is faster than most cars! Similar to the greyhound, the cheetah has an anatomy build for speed. However, research showed 
+                that a cheetah's forelimb muscles are even longer than that of the greyhound. They also have stronger flexor muscles, 
+                responsible for their toes and claws, which allows them to propel off the ground faster (Hudson, 2011).</p>
+
+                <figure>
+                    <iframe width="720" height="405" src="https://www.youtube.com/embed/I-4STrKpK3o?start=4" title="YouTube video 
+                    player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture" allowfullscreen></iframe>
+                    <figcaption>Video of cheetah running, by INFOTAINMENT 101</figcaption>
+                </figure>
+            </div>
+
+            <div id="prey">
+                <h2>Hunting and prey</h2>
+                <p>Cheetahs in Africa usually prey on medium sized mammals weighing around 23-56 kg. These include blesboks, impalas, and 
+                gazelles. They usually do not attack larger prey as there is a greater chance of getting injured (Hayward, 2006). Their 
+                strategy is sneaking up on prey, then chasing their prey down in a short explosive chase. A successful chase ends with the 
+                cheetah knocking their prey down and biting down on the prey's throat until it suffocates. (Caro, 1987)</p>
+            </div>
+
+            <div id="social">
+                <h2>Social structure</h2>
+                Male cheetahs live alone or in small groups, while females only live with their cubs. Cubs need a long time to learn how to 
+                successfully hunt down prey and typically rely on their mother for food. They do not separate from their mother until they 
+                are 14-18 months old (Caro, 1987).
+
+                <figure>
+                    <img src="cheetah_and_cub.jpg" alt="Cheetah and cub">
+                    <figcaption>Photo of cheetah and cub, by <a href="https://unsplash.com/@joao_freire">Little John</a></figcaption>
+                </figure>
+            </div>
+
+            <div id="endangered">
+                <h2>Threats to Cheetah Population</h2>
+
+                <p>Cheetahs are currently listed as a vulnerable species according to the <abbr title="International Union for Conservation of Nature">IUCN</abbr> Red List. 
+                    The <dfn id="def-IUCN">IUCN Red List</dfn> is a list of wildlife species and their current status of endangerment. Many governments and organizations 
+                    refer to this list in efforts to maintain biodiversity in the world.</p>
+
+                <ol>
+                    <li>Habitat destruction</li>
+                    <li>Climate change</li>
+                    <li>Hunting/Poaching</li>
+                    <li>Lack of available territory</li>
+                    <li>Genetic defects/low reproduction</li>
+                </ol>
+                
+                <p>Cheetah population is on the decline. By 2016, the cheetah population in Asia has declined so much that their numbers are 
+                    estimated to be less than 50. The population in Africa is estimated to be around 7000 only. Cheetahs require wide 
+                    territories; however, in 2016 they only spotted in 9% of their past range (Durant, 2016).</p>
+                
+                <p>Cheetahs require wide areas to roam in for their territory, however humans have destroyed or intruded in much of their 
+                    habitat. Climate change, hunting, and a genetically low rate of reproduction are also factors (National Geographic Society,
+                     2020).</p>
+                
+                <p>Another problem that is pushing the cheetah species towards extinction is the lack of genetic diversity. The cheetah 
+                    population is <dfn id="def-homozygous">homozygous</dfn>, meaning most members of the population have similar genes. Homozygosity is a result of inbreeding.
+                     For example, animals such as domestic cats have a relatively low level of homozygosity in comparison. Homozygosity 
+                     increases the risk for cheetahs to catch diseases, inherit recessive traits, and cause lower rate or inability to reproduce
+                      (National Geographic Society, 2020).</p>
+                
+                <p>Conservation efforts for cheetahs prove difficult, as they require large land area and cannot share with other predators. 
+                    While some cheetahs live in protected zones, most of them do not since they require such large roaming areas. (Durant, 2016)
+                     Cheetah cubs face high mortality rates when they are conceived in an area containing many other predators, such as lions, 
+                     leopards and hyenas. Cheetah cubs also face poaching by humans. Adult cheetahs can be killed by other cheetahs while 
+                     fighting for territory, or by farmers (Cheetah Conservation Fund, 2021).</p>
+                
+                <p>For such a widely popularized and majestic animal such as the cheetah, the future of its species is looking rather grim.
+                     Scientists are calling for the <abbr title="International Union for Conservation of Nature">IUCN</abbr> to change the status of the cheetah from vulnerable to endangered, as certain types of 
+                     funding are only available to endangered species. If the trend of its declining population continues, it may soon face 
+                     extinction. Many organizations are actively trying to protect and save the future of this species. The cheetah is not only 
+                     one of the world's most famous big cats, it is also a predator that is an essential part of the world's ecosystem.</p>
+            </div>
+
+            <div id="organizations">
                 <nav>
-                    <ol>
-                        <li><a href="https://web222.ca">web222</a></li>
-                        <li><a href="https://web322.ca">web322</a></li>
-                        <li><a href="https://web422.ca">web422</a></li>
-                    </ol>
+                    <h3>Organizations for the conservation of cheetahs</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Organization</th>
+                                <th>Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://www.awf.org/">African Wildlife Foundation</a></td>
+                                <td>Wildlife preservation in Africa</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://bigcatconservation.webs.com/">Big Cat Conservation</a></td>
+                                <td>UK based organization for wildlife rescue and shelters</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://carnivoreconservationmalawi.blogspot.com/">Carnivore Conservation Malawi</a></td>
+                                <td>Preservation of wildlife in Malawi</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.felidae.org/">Cat Action Treasury (CAT)</a></td>
+                                <td>Conservation of the wild cats worldwide</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.cheetahandwilddog.org/">Cheetah and Wild Dog</a></td>
+                                <td>Conservation of cheetahs and African wild dogs</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.cheetahbotswana.com/">Cheetah Conservation Botswana</a></td>
+                                <td>Preservation of Botswana's cheetahs through research and outreach</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.cheetah.org/">Cheetah Conservation Fund</a></td>
+                                <td>Conservation of cheetahs worldwide</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.cheetah.co.za/">Cheetah Outreach</a></td>
+                                <td>Campaign for survival of the Southern African cheetah</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://felidaefund.org/">Felidae Conservation Fund</a></td>
+                                <td>Conservation of 37 felidae species through research and education</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.wildlife.ir/en/">Iranian Cheetah Society</a></td>
+                                <td>Non-profit organization to save the remaining Asiatic cheetahs</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://panthera.org/">Panthera</a></td>
+                                <td>Conservation of large cats including cheetahs</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.runningwildconservation.org/">Running Wild Conservation</a></td>
+                                <td>Breeding and reintroducing cheetahs to the wild</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.whiteoakwildlife.org/">Wildlife Conservation Network</a></td>
+                                <td>Support for conservation initiatives worldwide to protect endangered species</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </nav>
             </div>
 
-            <div id="question-4">
-                <!-- Question 4 - table -->
-                <table>
-                    <thead>
-                        <tr>
-                            <th>User ID</th>
-                            <th>Name</th>
-                            <th>Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>235</td>
-                            <td>Wil Lee</td>
-                            <td rowspan="3"></td>
-                        </tr>
-                        <tr>
-                            <td>236</td>
-                            <td>Julia Clark</td>
-                        </tr>
-                        <tr>
-                            <td>237</td>
-                            <td>Rex Murphy</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div id="question-5">
-                <!-- Question 5 - Picture of an owl, limit to 50 pixels wide -->
-                <img src="https://nas-national-prod.s3.amazonaws.com/styles/article_hero_inline/s3/web_a1_1902_16_barred-owl_sandra_rothenberg_kk.jpg?itok=EnOn4oDh" 
-                    alt="Picture of an owl" width="500">
-            </div>
-
-            <div id="question-6">
-                <!-- Question 6 - External JavaScript file -->
-                <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-            </div>
-
-            <div id="question-7">
-                <!-- Question 7 - Audio with controls showing -->
-                <audio controls>
-                    <source src="https://datashat.net/music_for_programming_49-julien_mier.mp3" type="audio/mp3">
-                    <p>Sorry, your browser doesn't support HTML5 audio. Here is a 
-                        <a href="https://datashat.net/music_for_programming_49-julien_mier.mp3">link to the audio</a> instead</p>.
-                </audio>
-            </div>
-
-            <div id="question-8">
-                <!-- Question 8 - Print name and student number to dev tools console -->
-                <script>
-                    console.log('Katie Liu');
-                    console.log('018889121');
-                </script>
-            </div>
+            <footer>
+                <p>Page last updated <time datetime="2022-03-07">Mar 7, 2022</time></p>
+                <p><a href="#top">[ RETURN TO TOP OF PAGE ]</a></p>
+            </footer> 
         </main>
     </body>
 </html>
