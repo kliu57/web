@@ -7,6 +7,7 @@
 
 // Create an event handler to run when the page is loaded
 window.onload = function () {
+  console.log('scripts loaded');
   var document = window.document;
 
   document.getElementById("contactform").reset();   // clear the contact me form
