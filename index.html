@@ -6,67 +6,72 @@ WEB 222 NAA
 Final assessment
 index.html
 -->
-
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <!-- Page setup -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>I'm Katie Liu</title>
-    <meta name="description" content="Current computer programming student. Future software developer. Former 3D animator. Passionate about programming and sports.">
-    <meta name="author" content="Katie Liu">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="profilepic.png">
-  
+    <meta
+      name="description"
+      content="Current computer programming student. Future software developer. Former 3D animator. Passionate about programming and sports."
+    />
+    <meta name="author" content="Katie Liu" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="icon" type="image/png" href="profilepic.png" />
     <!-- Stylesheet -->
     <link href="styles.css" rel="stylesheet" type="text/css" />
-
     <!-- Load JS scripts -->
     <script type="text/javascript" src="scripts.js"></script>
   </head>
-  
   <body>
     <header id="header">
-      <br>
-      <img src="profilepic.png" width="120" class="center">
-      <br><br>
+      <br />
+      <img src="profilepic.png" width="120" class="center" />
+      <br /><br />
       <h1>Hi there!</h1>
       <p>
         My name is Katie Liu. I'm currently a computer programming
-        <br>student in Toronto. Nice to meet you!
+        <br />student in Toronto. Nice to meet you!
       </p>
-      
       <!-- Menu links -->
       <ul class="main-menu" id="menu">
-        <li><a onclick="loadMenuItem('home')" id="homeLink" class="single active">home</a></li>
-        <li><a onclick="loadMenuItem('about')" id="aboutLink" class="single">about</a></li>
-        <li><a onclick="loadMenuItem('contact')" id="contactLink" class="single">contact</a></li>
-        <li><a href="katie_liu_resume.pdf" download>resume<sup>(pdf)</sup></a></li>
-      </ul>                 
+        <li><a href="#home" id="homeLink" class="single active">home</a></li>
+        <li><a href="#about" id="aboutLink" class="single">about</a></li>
+        <li><a href="#education" id="educationLink" class="single">education</a></li>
+        <li><a href="#contact" id="contactLink" class="single">contact</a></li>
+        <li>
+          <a href="katie_liu_resume.pdf" target="_blank" download>resume<sup>(pdf)</sup></a>
+        </li>
+      </ul>
     </header>
-   
     <div id="container">
       <div class="inner">
-        <div id="content"> 
-          
+        <div id="content">
           <!-- HOME PAGE - SHOWN BY DEFAULT, HIDDEN WHEN A DIFFERENT MENU LINK IS CLICKED -->
           <div id="home" class="content-region show">
-
             <h2>My journey</h2>
             <p>
-              I am a former 3D animator turned programmer. I am currently taking a three-year program of Computer Programming & Analysis at Seneca College.
+              I am a former 3D animator turned programmer. I am currently taking a three-year
+              program of Computer Programming & Analysis at Seneca College.
+            </p>
+            <p>Now, I know what you are thinking. Why?</p>
+            <p>
+              Well, I have always been interested in programming, even back when I was working as an
+              animator. I used python to write multiple scripts at multiple companies I worked for,
+              to automate certain repetitive tasks for myself and others. Some of the scripts are
+              still being used today.
             </p>
             <p>
-              Now, I know what you are thinking. Why?
+              I became known by my ex-coworkers as a &quot;guru&quot; simply because I knew the very
+              basics of coding. But I knew that I was far from that, and decided I wanted to go back
+              to school to deepen my knowledge of programming to be able to build programs of a
+              larger scale.
             </p>
-            <p>
-              Well, I have always been interested in programming, even back when I was working as an animator. I used python to write multiple scripts at multiple companies I worked for, to automate certain repetitive tasks for myself and others. Some of the scripts are still being used today.
-            </p>
-            <p>
-              I became known by my ex-coworkers as a &quot;guru&quot; simply because I knew the very basics of coding. But I knew that I was far from that, and decided I wanted to go back to school to deepen my knowledge of programming to be able to build programs of a larger scale.
-            </p>
-
-            <hr>
+            <hr />
 
             <h2>My technical knowledge</h2>
             <ul>
@@ -79,11 +84,13 @@ index.html
               <li>Java</li>
             </ul>
 
-            <hr>
+            <hr />
 
             <h2>My soft skills</h2>
             <p>
-              I have developed a solid set of soft skills to be able to confidently work in a team environment. Here are some of the experiences that have helped shape my interpersonal skills:
+              I have developed a solid set of soft skills to be able to confidently work in a team
+              environment. Here are some of the experiences that have helped shape my interpersonal
+              skills:
             </p>
             <ul>
               <li>Presenting my scripts to a large audience</li>
@@ -93,98 +100,185 @@ index.html
               <li>Handling weekly deadlines</li>
               <li>Multi-tasking when working part-time jobs in retail</li>
               <li>Participating in a college varsity sports team</li>
-            </ul> 
+            </ul>
 
-            <hr>
-
-            <h2>My Work Experience</h2>
-
-            <hr>
-
-            <h2>My Education</h2>
-            <table cellspacing="0" cellpadding="0">
-                <tr>
-                    <td>
-                      <img src="senecalogo.png" width="70">
-                    </td>
-                    <td>
-                      Seneca College
-                      <br>Computer Programming & Analysis
-                      <br>2021 - current
-                    </td>
-                </tr>                                              
-            </table>
-            <br>
-            
           </div>
-          
+
           <!-- ABOUT ME PAGE - HIDDEN UNTIL MENU LINK IS CLICKED -->
           <div id="about" class="content-region hide">
-            
-            <h2>Katie Liu</h2>
-            <p><a href="https://www.linkedin.com/in/liu-katie/"><img src="linkedinlogo.png" width="50"></a></p>
-
-            <p>Computer Programming & Analysis Student at Seneca College</p>
-            <p>Toronto, Ontario</p>
-            <p>Contact: <a href="mailto:kliu57@myseneca.ca">kliu57@myseneca.ca</a></p>
-
-
+            <div class="abt-list">
+              <section class="abt">
+                <h2 class="abt-name">About Me and Academic Honesty</h2>
+                <div class="abt-details">
+                  I declare that my assessment is wholly my own work in accordance with Seneca 
+                  Academic Policy. No part of this assessment has been copied manually or  
+                  electronically from any other source (including web sites) except for the 
+                  information supplied by the WEB222 instructors and / or made available in this  
+                  assessment for my use. I also declare that no part of this assignment has been 
+                  distributed to other students.
+                  <br><br><strong>Date:&nbsp;&nbsp;</strong><time datetime="2022-04-12">Apr 12, 2022</time>
+                </div>
+              </section>
+              <section class="abt">
+                <h2 class="abt-name">Basic Information</h2>
+                <div class="abt-details">
+                  <table>
+                    <tr>
+                      <th>Name:</th>
+                      <th>Katie Liu</th>
+                    </tr>
+                    <tr>
+                      <td>Email:</td>
+                      <td><a href="mailto:kliu57@myseneca.ca">kliu57@myseneca.ca</a></td>
+                    </tr>
+                    <tr>
+                      <td>Language:</td>
+                      <td>English, Mandarin</td>
+                    </tr>
+                    <tr>
+                      <td>Class Section:</td>
+                      <td>NAA</td>
+                    </tr>
+                    <tr>
+                      <td>Student ID:</td>
+                      <td>018889121</td>
+                    </tr>
+                    <tr>
+                      <td>Instructor:</td>
+                      <td>David Humphrey</td>
+                    </tr>
+                  </table>
+                </div>
+              </section>
+            </div>
           </div>
-          
+
+          <!-- EDUCATION PAGE - HIDDEN UNTIL MENU LINK IS CLICKED -->
+          <div id="education" class="content-region hide">
+            <div class="edu-list">
+              <section class="edu" id="leftBox">
+                <ul class="edu-details">
+                  <li>2021-2024 (expected)</li>
+                </ul>
+                <h2 class="edu-name">Ontario College Advanced Diploma</h2>
+              </section>
+              <section class="edu" id="rightBox">
+                <h2 class="edu-name">Computer Programming & Analysis<br>SENECA COLLEGE</h2>
+                <ul class="edu-details">
+                  <li>2021 Seneca Varsity Athletic Scholarship</li>
+                  <li>2022 MBNA scholarship</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+
           <!-- CONTACT ME PAGE - HIDDEN UNTIL MENU LINK IS CLICKED -->
           <div id="contact" class="content-region hide">
             <h2>Contact Me</h2>
 
-            <!-- validate using JS that message contents are not empty spaces and only submit if validation passes -->
-            <form action="https://httpbin.org/post" method="POST" name="contactform" id="contactform" onsubmit="return validate()">
-
+            <!-- validate using JS event listener that message contents are not empty spaces and only submit if validation passes -->
+            <!-- rest of fields are validated through regex -->
+            <form
+              action="https://httpbin.org/post"
+              method="POST"
+              name="contactform"
+              id="contactform"
+            >
               <div class="contact-form-group">
                 <label for="name">Your name</label>
                 <div>
-                    <input type="text" id="name" placeholder="name" name="name" size="30" tabindex="1" 
-                      pattern="(.|\s)*\S(.|\s)*" title="Must not be blank" required>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="name"
+                    name="name"
+                    size="30"
+                    tabindex="1"
+                    pattern="(.|\s)*\S(.|\s)*"
+                    title="Must not be blank"
+                    required
+                  />
                 </div>
               </div>
 
               <div class="contact-form-group">
                 <label for="email">Your email address</label>
                 <div>
-                  <input id="email" type="email" placeholder="email" name="email" autocomplete="email" size="30" maxlength="320" tabindex="2" required>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="email"
+                    name="email"
+                    autocomplete="email"
+                    size="30"
+                    maxlength="320"
+                    tabindex="2"
+                    required
+                  />
                 </div>
               </div>
 
               <div class="contact-form-group">
                 <label for="phonenumber">Your phone number (optional)</label>
                 <div>
-                  <input id="phonenumber" type="phonenumber" placeholder="phone number" name="phonenumber" autocomplete="email" size="30" maxlength="320" tabindex="3">
+                  <input
+                    id="phonenumber"
+                    type="phonenumber"
+                    placeholder="phone number"
+                    name="phonenumber"
+                    autocomplete="email"
+                    size="30"
+                    maxlength="320"
+                    tabindex="3"
+                    pattern="^[0-9.()+\s-]*$"
+                    title="Only numbers and [ .()+-] are allowed"
+                  />
                 </div>
               </div>
 
               <div class="contact-form-group">
                 <label for="address">Your address</label>
                 <div>
-                    <input type="text" id="address" placeholder="address" name="address" size="30" tabindex="4"
-                      pattern="(.|\s)*\S(.|\s)*" title="Must not be blank" required>
+                  <input
+                    type="text"
+                    id="address"
+                    placeholder="address"
+                    name="address"
+                    size="30"
+                    tabindex="4"
+                    pattern="(.|\s)*\S(.|\s)*"
+                    title="Must not be blank"
+                    required
+                  />
                 </div>
               </div>
 
               <div class="contact-form-group">
                 <label for="city">Your city</label>
                 <div>
-                  <input list="cities" id="city" placeholder="city" name="city" size="30" tabindex="5"
-                  pattern="(.|\s)*\S(.|\s)*" title="Must not be blank" required>
+                  <input
+                    list="cities"
+                    id="city"
+                    placeholder="city"
+                    name="city"
+                    size="30"
+                    tabindex="5"
+                    pattern="(.|\s)*\S(.|\s)*"
+                    title="Must not be blank"
+                    required
+                  />
                   <datalist id="cities">
-                    <option value="Toronto">
-                    <option value="Montreal">
-                    <option value="Vancouver">
-                    <option value="Ottawa">
-                    <option value="Edmonton">
-                    <option value="Calgary">
-                    <option value="Quebec City">
-                    <option value="Winnepeg">
-                    <option value="Hamilton">
-                    <option value="London">
-                    <option value="Halifax">
+                    <option value="Toronto"></option>
+                    <option value="Montreal"></option>
+                    <option value="Vancouver"></option>
+                    <option value="Ottawa"></option>
+                    <option value="Edmonton"></option>
+                    <option value="Calgary"></option>
+                    <option value="Quebec City"></option>
+                    <option value="Winnepeg"></option>
+                    <option value="Hamilton"></option>
+                    <option value="London"></option>
+                    <option value="Halifax"></option>
                   </datalist>
                 </div>
               </div>
@@ -192,52 +286,93 @@ index.html
               <div class="contact-form-group">
                 <label for="postalcode">Your postal code</label>
                 <div>
-                    <input type="text" id="postalcode" placeholder="postal code" name="postalcode" size="30" tabindex="6"
-                      pattern="[A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d" title="Must be a valid postal code" required>
+                  <input
+                    type="text"
+                    id="postalcode"
+                    placeholder="postal code"
+                    name="postalcode"
+                    size="30"
+                    tabindex="6"
+                    pattern="[A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d"
+                    title="Must be a valid postal code"
+                    required
+                  />
                 </div>
               </div>
 
               <div class="contact-form-group">
-                <input type="radio" id="question" name="messagetype" value="question" checked="checked" tabindex="7" onclick="setFieldType('hourlyrate', 'hidden')">
-                <label for="question">Question</label><br>
-                <input type="radio" id="comment" name="messagetype" value="comment" tabindex="7" onclick="setFieldType('hourlyrate', 'hidden')">
-                <label for="comment">Comment</label><br>
-                <input type="radio" id="hiring" name="messagetype" value="hiring" tabindex="7" onclick="setFieldType('hourlyrate', 'text')">
+                <input
+                  type="radio"
+                  id="question"
+                  name="messagetype"
+                  value="question"
+                  checked="checked"
+                  tabindex="7"
+                />
+                <label for="question">Question</label><br />
+                <input
+                  type="radio"
+                  id="comment"
+                  name="messagetype"
+                  value="comment"
+                  tabindex="7"
+                />
+                <label for="comment">Comment</label><br />
+                <input
+                  type="radio"
+                  id="hiring"
+                  name="messagetype"
+                  value="hiring"
+                  tabindex="7"
+                />
                 <label for="hiring">Hiring</label>
               </div>
 
               <div class="contact-form-group">
                 <label for="hourlyrate" id="hourlyrateLabel" hidden="hidden">Hourly rate</label>
                 <div>
-                    <input type="hidden" id="hourlyrate" placeholder="hourly rate" name="hourlyrate" size="30" tabindex="8"
-                      pattern="^\$?[1-9]\d*(\.\d+)?$" title="Must be a valid number" required>
+                  <input
+                    type="hidden"
+                    id="hourlyrate"
+                    placeholder="hourly rate"
+                    name="hourlyrate"
+                    size="30"
+                    tabindex="8"
+                    pattern="^\$?[1-9]\d*(\.\d+)?$"
+                    title="Must be a valid number"
+                    required
+                  />
                 </div>
               </div>
 
               <div class="contact-form-group">
                 <label for="message">Your message</label>
                 <div>
-                    <textarea id="message" placeholder="message" name="message" rows="6" maxlength="3000" tabIndex="9" required></textarea>
+                  <textarea
+                    id="message"
+                    placeholder="message"
+                    name="message"
+                    rows="6"
+                    maxlength="3000"
+                    tabindex="9"
+                    required
+                  ></textarea>
                 </div>
               </div>
 
               <div class="contact-form-group">
                 <div class="button">
-                    <button id="submit-form" type="submit" tabindex="10">Submit</button>
-                </div>    
+                  <button id="submit-form" type="submit" tabindex="10">Submit</button>
+                </div>
               </div>
-
-          </form>
+            </form>
+          </div>
         </div>
       </div>
+
+      <footer>
+        Page last updated <time datetime="2022-04-12">Apr 12, 2022</time>
+      </footer>
     </div>
-
-    <footer>  
-      Page last updated <time datetime="2022-04-12">Apr 12, 2022</time>
-      <br><br><a href="#top">return to top of page</a>
-    </footer>
-    
-
-    
   </body>
 </html>
