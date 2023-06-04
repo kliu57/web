@@ -1,10 +1,3 @@
-// Katie Liu
-// 018889121
-// kliu57@myseneca.ca
-// WEB 222 NAA
-// Final assessment
-// scripts.js
-
 // Create an event handler to run when the page is loaded
 window.onload = function () {
   let document = window.document;
