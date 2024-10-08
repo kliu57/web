@@ -167,6 +167,13 @@ hr {
   width: 250px;
   border-bottom-left-radius: 10px;
 }
+.edu img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  display: block;
+  object-fit: cover;
+}
 .edu + .edu {
   text-align: left;
   flex-grow: 1;
@@ -219,13 +226,6 @@ hr {
 }
 
 /* project flex boxes */
-.prj-list {
-  display: flex;
-  flex-direction: row;
-  box-shadow: 0 3px 10px rgba(135, 76, 98, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-}
 .prj {
   padding: 1em;
   color: #d6d3d3;
@@ -234,6 +234,25 @@ hr {
   width: 250px;
   margin-bottom: 30px;
   border-bottom-left-radius: 10px;
+}
+
+/* Specific settings for project list containers */
+.prj-list {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 3px 10px rgba(135, 76, 98, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.prj img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  display: block;
+  object-fit: cover;
 }
 .prj + .prj {
   text-align: left;
@@ -479,6 +498,18 @@ button:focus {
 #githubIcon {
   cursor: pointer;
   filter: none;
+  width: 25px;
+  height: auto;
+  vertical-align: top;
+  margin-right: 7px;
+  display: inline-block;
+  position: relative;
+  top: 2.5px;
+}
+
+/* Optional: Remove right margin from the last icon in a series */
+.github-icon:last-child {
+  margin-right: 0;
 }
 
 #githubIcon:hover {
