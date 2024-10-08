@@ -21,9 +21,31 @@ window.onload = function () {
   // Add event listener to contact me form, stop form from submitting if message
   // is blank or only contains spaces
   form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop form from submitting immediately
     if (!validateNotBlank("message", "Please enter a message!")) {
-      e.preventDefault(); //stop form from submitting
+      return; // Stop form from submitting if message is invalid
     }
+    // Assuming the server side form handling is done here
+    fetch('https://formspree.io/f/meqykbra', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.ok) {
+        form.reset();
+        alert('Thank you for reaching out!');
+      } else {
+        alert('There was an error, please try again.');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('There was an error, please try again.');
+    });
   });
 
   console.log("scripts loaded");
