@@ -21,35 +21,50 @@ window.onload = function () {
   // Add event listener to contact me form, stop form from submitting if message
   // is blank or only contains spaces
   form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Stop form from submitting immediately
-    if (!validateNotBlank("message", "Please enter a message!")) {
-      return; // Stop form from submitting if message is invalid
+    e.preventDefault();
+    if (
+      !validateNotBlank("message", "Please enter a message!") ||
+      !validateEmail("email", "Please enter a valid email address!")
+    ) {
+      return; // Stop form from submitting if validations fail
     }
+
     // Assuming the server side form handling is done here
-    fetch('https://formspree.io/f/meqykbra', {
-      method: 'POST',
+    fetch("https://formspree.io/f/meqykbra", {
+      method: "POST",
       body: new FormData(form),
       headers: {
-        'Accept': 'application/json'
-      }
+        Accept: "application/json",
+      },
     })
-    .then(response => response.json())
-    .then(data => {
-      if (data.ok) {
-        form.reset();
-        alert('Thank you for reaching out!');
-      } else {
-        alert('There was an error, please try again.');
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      alert('There was an error, please try again.');
-    });
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.ok) {
+          form.reset();
+          alert("Thank you for reaching out!");
+        } else {
+          alert("There was an error, please try again.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("There was an error, please try again.");
+      });
   });
 
   console.log("scripts loaded");
 };
+
+function validateEmail(elementId, errorMsg) {
+  let input = document.getElementById(elementId);
+  let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(input.value)) {
+    alert(errorMsg);
+    input.focus();
+    return false;
+  }
+  return true;
+}
 
 function showDiplomaPopup() {
   const popupOverlay = document.getElementById("diplomaPopup");
@@ -73,18 +88,16 @@ function loadMenuItem(hash) {
   const menuItems = ["#home", "#about", "#education", "#contact"];
 
   // deactivate all links
-  menuItems.forEach(
-    (item) => {
-      let linkElement = document.querySelector(`${item}Link`);
-      linkElement.className = "single";
-      // prevent clicking on the active link
-      linkElement.addEventListener('click', function(event) {
-        if (linkElement.classList.contains("active")) {
-          event.preventDefault();
-        }
-      });
-    }
-  );
+  menuItems.forEach((item) => {
+    let linkElement = document.querySelector(`${item}Link`);
+    linkElement.className = "single";
+    // prevent clicking on the active link
+    linkElement.addEventListener("click", function (event) {
+      if (linkElement.classList.contains("active")) {
+        event.preventDefault();
+      }
+    });
+  });
 
   // hide all the menu items
   menuItems.forEach(
