@@ -330,7 +330,7 @@ hr {
 }
 .abt {
   padding: 1em;
-  color: white;
+  color: #d6d3d3;
   height: 100%;
   width: 55%;
 }
@@ -338,8 +338,9 @@ hr {
   width: 45%;
 }
 .abt-name {
-  font-size: 1.4em;
+  font-size: 1.75em;
 }
+
 .abt-details {
   font-size: 1.4rem;
   line-height: 1.5;
@@ -401,6 +402,11 @@ th {
 .main-menu li a.active {
   color: #ffffff;
   border-bottom-color: #ef6d3d;
+  cursor: default;
+  pointer-events: none;
+}
+.main-menu li a.active:hover {
+  color: #ffffff;
 }
 
 /* Utility classes */
@@ -525,4 +531,8 @@ button:focus {
 
 .github-icon:last-child {
   margin-right: 0;
+}
+
+#diplomaImage:hover {
+  filter: brightness(50%);
 }

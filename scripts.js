@@ -2,7 +2,6 @@
 window.onload = function () {
   let document = window.document;
   let form = document.querySelector("#contactform"); // contact me form
-  let radioButtons = form.messagetype; // radio buttons for Question/Comment/Hiring
   let newHash = "";
 
   // clear hash upon refresh
@@ -54,7 +53,16 @@ function loadMenuItem(hash) {
 
   // deactivate all links
   menuItems.forEach(
-    (item) => (document.querySelector(`${item}Link`).className = "single")
+    (item) => {
+      let linkElement = document.querySelector(`${item}Link`);
+      linkElement.className = "single";
+      // prevent clicking on the active link
+      linkElement.addEventListener('click', function(event) {
+        if (linkElement.classList.contains("active")) {
+          event.preventDefault();
+        }
+      });
+    }
   );
 
   // hide all the menu items
