@@ -13,7 +13,6 @@ window.onload = function () {
   window.addEventListener("hashchange", function (e) {
     newHash = window.location.hash;
     loadMenuItem(newHash);
-    console.log("hash change: ", newHash);
   });
 
   // clear the contact me form

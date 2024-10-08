@@ -157,7 +157,6 @@ hr {
 .edu-list {
   display: flex;
   flex-direction: row;
-  box-shadow: 0 3px 10px rgba(135, 76, 98, 0.2);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -224,7 +223,7 @@ hr {
 
 #rightBox {
   padding-left: 40px;
-  background-color: black;
+  background-color: rgba(25, 27, 29, 0.6);
 }
 
 * {
@@ -239,17 +238,15 @@ hr {
   height: 100%;
   width: 250px;
   margin-bottom: 30px;
-  border-bottom-left-radius: 10px;
 }
 
 .prj-list {
   height: 200px;
   display: flex;
   flex-direction: row;
-  box-shadow: 0 3px 10px rgba(135, 76, 98, 0.2);
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .prj img {
@@ -329,7 +326,7 @@ hr {
 
 #prjRightBox {
   padding-left: 40px;
-  background-color: black;
+  background-color: rgba(25, 27, 29, 0.6);
 }
 
 * {
@@ -340,10 +337,9 @@ hr {
 .abt-list {
   display: flex;
   flex-direction: row;
-  box-shadow: 0 3px 10px rgba(135, 76, 98, 0.2);
   border-radius: 10px;
   overflow: hidden;
-  background-color: none;
+  background-color: rgba(25, 27, 29, 0.6);
 }
 
 .abt {
@@ -462,30 +458,39 @@ textarea {
 
 input,
 textarea {
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
+  border: none; /* Remove border */
+  border-radius: 10px; /* Keep rounded corners */
+  background: #f1f3f4; /* Optional: set a light background color for better visibility */
+  padding: 9px; /* Add padding to make the fields easier to interact with */
+  outline: none; /* Remove the outline to keep the UI clean */
 }
 
 input:focus,
 textarea:focus {
-  border-radius: 5px;
+  border-color: #5880be;
 }
 
 button {
   margin-top: 5px;
   padding: 7px;
-  font: bold 0.8em sans-serif;
-  border: 2px solid #333;
+  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 1.1em;
+  border: 4px solid #333;
   border-radius: 5px;
   cursor: pointer;
+  background: #333;
+  color: white;
 }
 
 button:hover,
 button:focus {
   outline: none;
-  background: #ffefd5;
-  color: black;
+  border: 4px solid #848b90;
+  background: #848b90;
+  color: white;
 }
 
 .popup-overlay {
