@@ -8,6 +8,8 @@ html {
 }
 
 body {
+  max-width: 800px;
+  margin: 25px auto;
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
@@ -115,11 +117,6 @@ html {
   background-size: cover;
 }
 
-body {
-  max-width: 800px;
-  margin: 25px auto;
-}
-
 header,
 #content,
 footer {
@@ -154,28 +151,24 @@ hr {
 }
 
 /* education flex boxes */
+.edu {
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
 .edu-list {
   display: flex;
   flex-direction: row;
   border-radius: 10px;
   overflow: hidden;
-}
-
-.edu {
-  padding: 1em;
-  color: #d6d3d3;
-  text-align: center;
-  height: 100%;
-  width: 250px;
-  border-bottom-left-radius: 10px;
+  margin-bottom: 38px;
 }
 
 .edu img {
-  width: 100%;
-  height: auto;
-  max-width: 250px;
   display: block;
   object-fit: cover;
+  border-bottom-left-radius: 10px;
 }
 
 .edu + .edu {
@@ -206,6 +199,7 @@ hr {
 
 #leftBox {
   height: 100%;
+  max-width: 250px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -222,7 +216,9 @@ hr {
 }
 
 #rightBox {
+  padding-top: 14px;
   padding-left: 40px;
+  padding-right: 10px;
   background-color: rgba(25, 27, 29, 0.6);
 }
 
@@ -232,16 +228,12 @@ hr {
 
 /* project flex boxes */
 .prj {
-  padding: 1em;
-  color: #d6d3d3;
-  text-align: center;
-  height: 100%;
-  width: 250px;
-  margin-bottom: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
 }
 
 .prj-list {
-  height: 200px;
   display: flex;
   flex-direction: row;
   border-radius: 10px;
@@ -250,11 +242,9 @@ hr {
 }
 
 .prj img {
-  width: 100%;
-  height: auto;
-  max-width: 250px;
   display: block;
   object-fit: cover;
+  border-bottom-left-radius: 10px;
 }
 
 .prj + .prj {
@@ -309,6 +299,7 @@ hr {
 
 #prjLeftBox {
   height: 100%;
+  max-width: 250px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -325,7 +316,9 @@ hr {
 }
 
 #prjRightBox {
+  padding-top: 14px;
   padding-left: 40px;
+  padding-right: 10px;
   background-color: rgba(25, 27, 29, 0.6);
 }
 
@@ -458,7 +451,8 @@ textarea {
 
 input,
 textarea {
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   font-size: 1.1em;
   border: none;
   border-radius: 6px;
@@ -570,4 +564,45 @@ button:focus {
 
 #diplomaImage:hover {
   filter: brightness(90%);
+}
+
+/* Make font smaller for smaller screens */
+@media (max-width: 810px) {
+  .prj-name {
+    font-size: 1.4em;
+  }
+  .prj-details li {
+    font-size: 0.9em;
+  }
+  #prjLeftBox {
+    height: 100%;
+    max-width: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .edu-name {
+    font-size: 1.3em;
+  }
+  .edu-details li {
+    font-size: 0.9em;
+  }
+  #leftBox {
+    height: 100%;
+    max-width: 230px;
+  }
+}
+
+@media (max-width: 610px) {
+  #leftBox {
+    height: 100%;
+    max-width: 0px;
+  }
+}
+
+@media (max-width: 590px) {
+  #prjLeftBox {
+    height: 100%;
+    max-width: 0px;
+  }
 }
