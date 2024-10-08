@@ -23,9 +23,6 @@ a {
   text-decoration: none;
   color: #5880be;
 }
-a:hover {
-  filter: brightness(180%);
-}
 
 small {
   font-size: 75%;
@@ -70,6 +67,7 @@ h4 {
   font-size: 1.8rem;
   line-height: 1.5;
 }
+
 h5 {
   font-size: 1.5rem;
   line-height: 1.6;
@@ -87,6 +85,7 @@ p {
 q:before {
   content: open-quote;
 }
+
 q:after {
   content: close-quote;
 }
@@ -97,6 +96,7 @@ blockquote {
   padding: 0.75em 1em;
   font-size: 1.8rem;
 }
+
 blockquote p:last-child {
   margin-bottom: 0;
 }
@@ -114,10 +114,12 @@ html {
   background: url(background.jpg) center center no-repeat fixed;
   background-size: cover;
 }
+
 body {
   max-width: 800px;
   margin: 25px auto;
 }
+
 header,
 #content,
 footer {
@@ -159,6 +161,7 @@ hr {
   border-radius: 10px;
   overflow: hidden;
 }
+
 .edu {
   padding: 1em;
   color: #d6d3d3;
@@ -167,6 +170,7 @@ hr {
   width: 250px;
   border-bottom-left-radius: 10px;
 }
+
 .edu img {
   width: 100%;
   height: auto;
@@ -174,10 +178,12 @@ hr {
   display: block;
   object-fit: cover;
 }
+
 .edu + .edu {
   text-align: left;
   flex-grow: 1;
 }
+
 .edu-name {
   color: #f58d88;
   font-size: 1.2em;
@@ -236,7 +242,6 @@ hr {
   border-bottom-left-radius: 10px;
 }
 
-/* Specific settings for project list containers */
 .prj-list {
   height: 200px;
   display: flex;
@@ -254,26 +259,39 @@ hr {
   display: block;
   object-fit: cover;
 }
+
 .prj + .prj {
   text-align: left;
   flex-grow: 1;
 }
+
 .prj-name {
   font-size: 1.6em;
   color: #788896;
 }
+
 .prj-name a {
   color: #788896;
   text-decoration: none;
 }
 
+.prj a:hover img {
+  filter: brightness(90%);
+}
+
 .prj-name a:hover {
   filter: brightness(200%);
 }
+
 .prj-details {
   padding: 0;
   list-style: none;
 }
+
+.prj-details a:hover {
+  filter: brightness(170%);
+}
+
 .prj-details li {
   line-height: 1.5em;
 }
@@ -328,15 +346,18 @@ hr {
   overflow: hidden;
   background-color: none;
 }
+
 .abt {
   padding: 1em;
   color: #d6d3d3;
   height: 100%;
   width: 55%;
 }
+
 .abt + .abt {
   width: 45%;
 }
+
 .abt-name {
   font-size: 1.75em;
 }
@@ -348,10 +369,12 @@ hr {
   overflow: auto;
   padding: 10px;
 }
+
 .abt-tech {
   font-size: 1.4em;
   margin-bottom: 0em;
 }
+
 .abt-tech-details {
   font-size: 1.4rem;
   line-height: 1.5;
@@ -364,19 +387,23 @@ hr {
 table {
   border: none;
 }
+
 th,
 td {
   padding-right: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
 }
+
 .abt-details thead {
   display: none;
 }
+
 .abt-details tbody {
   text-align: left;
   font-weight: normal;
 }
+
 th {
   font-weight: normal;
 }
@@ -390,21 +417,25 @@ th {
   justify-content: left;
   list-style: none;
 }
+
 .main-menu li a {
   margin-right: 20px;
   font-size: 2rem;
   border-bottom: solid transparent 3px;
   color: #cfd2da;
 }
+
 .main-menu li a:hover {
   color: #ffffff;
 }
+
 .main-menu li a.active {
   color: #ffffff;
   border-bottom-color: #ef6d3d;
   cursor: default;
   pointer-events: none;
 }
+
 .main-menu li a.active:hover {
   color: #ffffff;
 }
@@ -413,6 +444,7 @@ th {
 .hide {
   display: none;
 }
+
 .show {
   display: block;
 }
@@ -534,5 +566,5 @@ button:focus {
 }
 
 #diplomaImage:hover {
-  filter: brightness(50%);
+  filter: brightness(90%);
 }
