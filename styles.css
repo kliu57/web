@@ -391,6 +391,19 @@ h6 {
   padding: 0 10px 10px 10px;
 }
 
+.abt ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.abt-tech-details li:before {
+  content: "\25B6";
+  padding-right: 10px;
+  font-size: 0.5em;
+  vertical-align: middle;
+}
+
 /* tables */
 table {
   border: none;
