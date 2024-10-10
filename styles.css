@@ -171,7 +171,7 @@ hr {
   border-bottom-left-radius: 10px;
 }
 
-.edu + .edu {
+.edu+.edu {
   text-align: left;
   flex-grow: 1;
 }
@@ -247,7 +247,7 @@ hr {
   border-bottom-left-radius: 10px;
 }
 
-.prj + .prj {
+.prj+.prj {
   text-align: left;
   flex-grow: 1;
 }
@@ -342,7 +342,7 @@ hr {
   width: 55%;
 }
 
-.abt + .abt {
+.abt+.abt {
   width: 45%;
 }
 
@@ -507,6 +507,7 @@ button:focus {
   position: relative;
   width: auto;
 }
+
 .popup-content img {
   max-width: 90%;
   height: auto;
@@ -543,10 +544,6 @@ button:focus {
   top: 2.5px;
 }
 
-.github-icon:last-child {
-  margin-right: 0;
-}
-
 #githubIcon:hover {
   filter: brightness(100);
   transition: filter 0.3s ease;
@@ -566,14 +563,42 @@ button:focus {
   filter: brightness(90%);
 }
 
+#profileIcon {
+  cursor: pointer;
+  filter: none;
+  vertical-align: center;
+
+  display: inline-block;
+  position: relative;
+}
+
+.profile-icon {
+  cursor: pointer;
+  filter: none;
+  margin-left: 3px;
+  margin-right: 9px;
+}
+
+.profile-icon:last-child {
+  margin-right: 0;
+}
+
+#profileIcon:hover {
+  filter: brightness(100);
+  transition: filter 0.3s ease;
+}
+
+
 /* Make font smaller for smaller screens */
 @media (max-width: 810px) {
   .prj-name {
     font-size: 1.4em;
   }
+
   .prj-details li {
     font-size: 0.9em;
   }
+
   #prjLeftBox {
     height: 100%;
     max-width: 230px;
@@ -584,9 +609,11 @@ button:focus {
   .edu-name {
     font-size: 1.3em;
   }
+
   .edu-details li {
     font-size: 0.9em;
   }
+
   #leftBox {
     height: 100%;
     max-width: 230px;

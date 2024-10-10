@@ -1,447 +1,370 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <!-- Page setup -->
-    <meta charset="utf-8" />
-    <title>I'm Katie Liu</title>
-    <meta
-      name="description"
-      content="Current computer programming student. Future software developer. Former 3D animator. Passionate about programming and sports."
-    />
-    <meta name="author" content="Katie Liu" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
-    <link rel="icon" type="image/png" href="profilepic.png" />
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Stylesheet -->
-    <link href="styles.css" rel="stylesheet" type="text/css" />
-    <!-- Load JS scripts -->
-    <script type="text/javascript" src="scripts.js"></script>
+<head>
+  <!-- Page setup -->
+  <meta charset="utf-8" />
+  <title>I'm Katie Liu</title>
+  <meta name="description"
+    content="Current computer programming student. Future software developer. Former 3D animator. Passionate about programming and sports." />
+  <meta name="author" content="Katie Liu" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="icon" type="image/png" href="profilepic.png" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Stylesheet -->
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <!-- Load JS scripts -->
+  <script type="text/javascript" src="scripts.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        $(".github-icon").qtip({
-          content: {
-            text: function (event, api) {
-              return $(this).attr("alt");
-            },
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".github-icon").qtip({
+        content: {
+          text: function (event, api) {
+            return $(this).attr("alt");
           },
-          style: {
-            classes: "qtip-dark qtip-shadow",
-          },
-          position: {
-            my: "bottom center",
-            at: "top center",
-          },
-          show: {
-            delay: 0,
-          },
-        });
+        },
+        style: {
+          classes: "qtip-dark qtip-shadow",
+        },
+        position: {
+          my: "bottom center",
+          at: "top center",
+        },
+        show: {
+          delay: 0,
+        },
       });
-    </script>
-  </head>
+    });
+  </script>
+</head>
 
-  <body>
-    <header id="header">
-      <br />
-      <img src="profilepic.png" width="120" class="center" />
-      <br /><br />
-      <h1>Hi there!</h1>
-      <p>
-        My name is Katie Liu. I'm a Junior Developer in Toronto.
-        <br />Nice to meet you!
-      </p>
-      <!-- Menu links -->
-      <ul class="main-menu" id="menu">
-        <li><a href="#home" id="homeLink" class="single active">home</a></li>
-        <li><a href="#about" id="aboutLink" class="single">about</a></li>
-        <li>
-          <a href="#education" id="educationLink" class="single">education</a>
-        </li>
-        <li><a href="#contact" id="contactLink" class="single">contact</a></li>
-        <li>
-          <a href="Katie_Liu_Resume.pdf" download target="_blank"
-            >resume<sup>(pdf)</sup></a
-          >
-        </li>
-      </ul>
-    </header>
-    <div id="container">
-      <div class="inner">
-        <div id="content">
-          <!-- HOME PAGE - SHOWN BY DEFAULT, HIDDEN WHEN A DIFFERENT MENU LINK IS CLICKED -->
-          <div id="home" class="content-region show">
-            <h2>Projects</h2>
-            <div class="prj-list">
-              <section class="prj" id="prjLeftBox">
-                <a href="https://chatcraft.org/" target="_blank">
-                  <img src="proj_chatcraft.png" />
+<body>
+  <header id="header">
+    <br />
+    <img src="profilepic.png" width="120" class="center" />
+    <br /><br />
+    <h1>Hi there!</h1>
+    <p>
+      <img src="linkedin_logo_grey.png" id="profileIcon" class="profile-icon" alt="LinkedIn"
+        onclick="window.open('https://www.linkedin.com/in/liu-katie/', '_blank');" style="width: 28px; height: 28x" />
+      <img src="github_logo_grey.svg" id="profileIcon" class="profile-icon" alt="GitHub"
+        onclick="window.open('https://github.com/kliu57', '_blank');" style="width: 30px; height: 30x" />
+    </p>
+    <p>
+      My name is Katie Liu. I'm a Junior Developer in Toronto.
+      <br />Nice to meet you!
+    </p>
+    <!-- Menu links -->
+    <ul class="main-menu" id="menu">
+      <li><a href="#home" id="homeLink" class="single active">home</a></li>
+      <li><a href="#about" id="aboutLink" class="single">about</a></li>
+      <li>
+        <a href="#education" id="educationLink" class="single">education</a>
+      </li>
+      <li><a href="#contact" id="contactLink" class="single">contact</a></li>
+      <li>
+        <a href="Katie_Liu_Resume.pdf" download target="_blank">resume<sup>(pdf)</sup></a>
+      </li>
+    </ul>
+  </header>
+  <div id="container">
+    <div class="inner">
+      <div id="content">
+        <!-- HOME PAGE - SHOWN BY DEFAULT, HIDDEN WHEN A DIFFERENT MENU LINK IS CLICKED -->
+        <div id="home" class="content-region show">
+          <h2>Projects</h2>
+          <div class="prj-list">
+            <section class="prj" id="prjLeftBox">
+              <a href="https://chatcraft.org/" target="_blank">
+                <img src="proj_chatcraft.png" />
+              </a>
+            </section>
+            <section class="prj" id="prjRightBox">
+              <h2 class="prj-name">
+                <a href="https://chatcraft.org/" target="_blank" class="prj-name-link">
+                  ChatCraft.org
                 </a>
-              </section>
-              <section class="prj" id="prjRightBox">
-                <h2 class="prj-name">
-                  <a
-                    href="https://chatcraft.org/"
-                    target="_blank"
-                    class="prj-name-link"
-                  >
-                    ChatCraft.org
-                  </a>
-                  <img
-                    src="github_blue.svg"
-                    id="githubIcon"
-                    class="github-icon"
-                    alt="GitHub"
-                    onclick="window.open('https://github.com/tarasglek/chatcraft.org', '_blank');"
-                  />
-                </h2>
-                <ul class="prj-details">
-                  <li>Developer-focused, open source ChatGPT frontend!</li>
-                  <li>Contributions: User settings management of keys and providers, UI enhancements, fixes</li>
-                  <li>Tech stack: React, Node.js, TypeScript, Chakra UI</li>
-                </ul>
-              </section>
-            </div>
-            <div class="prj-list">
-              <section class="prj" id="prjLeftBox">
-                <a href="https://ood-system-frontend.vercel.app/admin" target="_blank">
-                  <img src="proj_resto_landing.png" />
-                </a>
-              </section>
-              <section class="prj" id="prjRightBox">
-                <h2 class="prj-name">
-                  <a
-                    href="https://ood-system-frontend.vercel.app/admin"
-                    target="_blank"
-                    class="prj-name-link"
-                  >
-                    Restaurant Site Generator
-                  </a>
-                  <img
-                    src="github_blue.svg"
-                    id="githubIcon"
-                    class="github-icon"
-                    alt="Front-end"
-                    onclick="window.open('https://github.com/DucPhongMa/OODSystem-frontend', '_blank');"
-                  />
-                  <img
-                    src="github_purple.svg"
-                    id="githubIcon"
-                    class="github-icon"
-                    alt="Back-end"
-                    onclick="window.open('https://github.com/DucPhongMa/OODSystem-backend', '_blank');"
-                  />
-                </h2>
-                <ul class="prj-details">
-                  <li>Generate a custom website for your restaurant!</li>
-                  <li>Pre-built customer pick-up order feature</li>
-                  <li><a href="https://ood-system-frontend.vercel.app/ryo" target="_blank">See example of generated website</a></li>
-                  <li>Tech stack: JavaScript, CSS, React, Next.js, MUI</li>
-                </ul>
-              </section>
-            </div>
-            <div class="prj-list">
-              <section class="prj" id="prjLeftBox">
-                <a href="https://museum-app-umber.vercel.app/" target="_blank">
-                  <img src="proj_museum.png" />
-                </a>
-              </section>
-              <section class="prj" id="prjRightBox">
-                <h2 class="prj-name">
-                  <a
-                    href="https://museum-app-umber.vercel.app/"
-                    target="_blank"
-                    class="prj-name-link"
-                  >
-                    Museum App
-                  </a>
-                  <img
-                    src="github_blue.svg"
-                    id="githubIcon"
-                    class="github-icon"
-                    alt="Front-end"
-                    onclick="window.open('https://github.com/kliu57/museum-app', '_blank');"
-                  />
-                  <img
-                    src="github_purple.svg"
-                    id="githubIcon"
-                    class="github-icon"
-                    alt="Back-end"
-                    onclick="window.open('https://github.com/kliu57/user-api', '_blank');"
-                  />
-                </h2>
-                <ul class="prj-details">
-                  <li>Browse works of the Metropolitan Museum of Art!</li>
-                  <li>Advanced search and user authentication</li>
-                  <li>Tech stack: MongoDB, JavaScript, CSS, Next.js, Bootstrap</li>
-                </ul>
-              </section>
-            </div>
-            <div class="prj-list">
-              <section class="prj" id="prjLeftBox">
-                <img src="proj_frag.png" />
-              </section>
-              <section class="prj" id="prjRightBox">
-                <h2 class="prj-name">
-                  Fragments Web App&emsp13;
-                  <img
-                    src="github_blue.svg"
-                    id="githubIcon"
-                    class="github-icon"
-                    alt="Front-end"
-                    onclick="window.open('https://github.com/kliu57/fragments-ui', '_blank');"
-                  />
-                  <img
-                    src="github_purple.svg"
-                    id="githubIcon"
-                    class="github-icon"
-                    alt="Back-end"
-                    onclick="window.open('https://github.com/kliu57/fragments', '_blank');"
-                  />
-                </h2>
-                <ul class="prj-details">
-                  <li>Back-end microservice which supports storage of files and images and conversion between file types!</li>
-                  <li>No longer hosted on AWS, see <a href="https://www.youtube.com/watch?v=7vrPdRUhQzw" target="_blank">Video Walkthrough</a></li>
-                  <li>Tech stack: Node.js, JavaScript, React, AWS</li>
-                </ul>
-              </section>
-            </div>
-            <div class="prj-list">
-              <section class="prj" id="prjLeftBox">
-                <a href="https://dia-ui.firebaseapp.com/" target="_blank">
-                  <img src="proj_diabetes.png" />
-                </a>
-              </section>
-              <section class="prj" id="prjRightBox">
-                <h2 class="prj-name">
-                  <a
-                    href="https://dia-ui.firebaseapp.com/"
-                    target="_blank"
-                    class="prj-name-link"
-                  >
-                    Diabetes Risk Survey App
-                  </a>
-                </h2>
-                <ul class="prj-details">
-                  <li>2023 Smart Cities Hackathon - Finalist</li>
-                  <li>Calculates risk of diabetes & generates reports</li>
-                  <li>Tech stack: JavaScript, CSS, Angular, MUI, Firebase</li>
-                </ul>
-              </section>
-            </div>
-            <div class="prj-list">
-              <section class="prj" id="prjLeftBox">
-                <a href="https://driver-quiz-buddy.vercel.app/" target="_blank">
-                  <img src="proj_drive.png" />
-                </a>
-              </section>
-              <section class="prj" id="prjRightBox">
-                <h2 class="prj-name">
-                  <a
-                    href="https://driver-quiz-buddy.vercel.app/"
-                    target="_blank"
-                    class="prj-name-link"
-                  >
-                    Driving Quiz Web App
-                  </a>
-                  <img
-                    src="github_blue.svg"
-                    id="githubIcon"
-                    class="github-icon"
-                    alt="GitHub"
-                    onclick="window.open('https://github.com/kliu57/DriverQuizBuddy', '_blank');"
-                  />
-                </h2>
-                <ul class="prj-details">
-                  <li>Interactive quiz to help kids study for G1 exam!</li>
-                  <li>Tech stack: Node.js, TypeScript, Angular, SCSS</li>
-                </ul>
-              </section>
-            </div>
-            <div class="prj-list">
-              <section class="prj" id="prjLeftBox">
-                <a href="https://kliu57-wa-web524-a6.azurewebsites.net/Shows" target="_blank">
-                  <img src="proj_shows.png" />
-                </a>
-              </section>
-              <section class="prj" id="prjRightBox">
-                <h2 class="prj-name">
-                  <a
-                    href="https://kliu57-wa-web524-a6.azurewebsites.net/Shows"
-                    target="_blank"
-                    class="prj-name-link"
-                  >
-                    TV Shows Web App
-                  </a>
-                </h2>
-                <ul class="prj-details">
-                  <li>Online collection of TV Shows!</li>
-                  <li>Manage shows, actors, episodes, and user accounts</li>
-                  <li>Tech stack: C#, ASP.NET MVC, Azure, CSS</li>
-                </ul>
-              </section>
-            </div>
+                <img src="github_blue.svg" id="githubIcon" class="github-icon" alt="GitHub"
+                  onclick="window.open('https://github.com/tarasglek/chatcraft.org', '_blank');" />
+              </h2>
+              <ul class="prj-details">
+                <li>Developer-focused, open source ChatGPT frontend!</li>
+                <li>
+                  Contributions: User settings management of keys and
+                  providers, UI enhancements, fixes
+                </li>
+                <li>Tech stack: React, Node.js, TypeScript, Chakra UI</li>
+              </ul>
+            </section>
           </div>
-
-          <!-- ABOUT ME PAGE - HIDDEN UNTIL MENU LINK IS CLICKED -->
-          <div id="about" class="content-region hide">
-            <div class="abt-list">
-              <section class="abt">
-
-                  <p>I'm Katie Liu, a junior developer interested in full stack development and building enterprise web applications!</p>
-                  <p>I have experience working at Fidelity Clearing Canada in automated testing, as well as writing scripts at Guru Studio and DHX Studios.
-                  <p>I recently graduated with a Diploma from Seneca and I am working towards my Bachelor's. These days my time is spent studying and coding.</p>
-                  <p>In my spare time I enjoy badminton, chess, and karaoke.</p>
-
-              </section>
-              <section class="abt">
-                <h2 class="abt-tech">Programming languages</h2>
-                <div class="abt-tech-details">
-                  <ul>
-                    <li>Javascript</li>
-                    <li>CSS</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>SQL</li>
-                    <li>C#</li>
-                    <li>C++</li>
-                    <li>TypeScript</li>
-                    <li>Bash</li>
-                  </ul>
-                </div>
-                <h2 class="abt-tech">Tech &amp; Frameworks</h2>
-                <div class="abt-tech-details">
-                  <ul>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>MongoDB</li>
-                    <li>Next.js</li>
-                    <li>Angular</li>
-                    <li>AWS</li>
-                    <li>Azure</li>
-                    <li>Visual Studios</li>
-                    <li>Excel</li>
-                  </ul>
-                </div>
-              </section>
-            </div>
-          </div>
-
-          <!-- EDUCATION PAGE - HIDDEN UNTIL MENU LINK IS CLICKED -->
-          <div id="education" class="content-region hide">
-            <div class="edu-list">
-              <section class="edu" id="leftBox">
-                <a href="#" onclick="showDiplomaPopup(); return false;">
-                  <img
-                    src="diploma.png"
-                    id="diplomaImage"
-                    alt="Diploma from Seneca Polytechnic"
-                  />
+          <div class="prj-list">
+            <section class="prj" id="prjLeftBox">
+              <a href="https://ood-system-frontend.vercel.app/admin" target="_blank">
+                <img src="proj_resto_landing.png" />
+              </a>
+            </section>
+            <section class="prj" id="prjRightBox">
+              <h2 class="prj-name">
+                <a href="https://ood-system-frontend.vercel.app/admin" target="_blank" class="prj-name-link">
+                  Restaurant Site Generator
                 </a>
-              </section>
-              <section class="edu" id="rightBox">
-                <h2 class="edu-name">
-                  Computer Programming & Analysis<br />2021&ndash;2024
-                </h2>
-                <ul class="edu-details">
-                  <li>President's Honour List for five semesters</li>
-                  <li>2022 MBNA scholarship</li>
-                  <li>2021 Badminton Varsity Athletic Scholarship</li>
+                <img src="github_blue.svg" id="githubIcon" class="github-icon" alt="Front-end"
+                  onclick="window.open('https://github.com/DucPhongMa/OODSystem-frontend', '_blank');" />
+                <img src="github_purple.svg" id="githubIcon" class="github-icon" alt="Back-end"
+                  onclick="window.open('https://github.com/DucPhongMa/OODSystem-backend', '_blank');" />
+              </h2>
+              <ul class="prj-details">
+                <li>Generate a custom website for your restaurant!</li>
+                <li>Pre-built customer pick-up order feature</li>
+                <li>
+                  <a href="https://ood-system-frontend.vercel.app/ryo" target="_blank">See example of generated
+                    website</a>
+                </li>
+                <li>Tech stack: JavaScript, CSS, React, Next.js, MUI</li>
+              </ul>
+            </section>
+          </div>
+          <div class="prj-list">
+            <section class="prj" id="prjLeftBox">
+              <a href="https://museum-app-umber.vercel.app/" target="_blank">
+                <img src="proj_museum.png" />
+              </a>
+            </section>
+            <section class="prj" id="prjRightBox">
+              <h2 class="prj-name">
+                <a href="https://museum-app-umber.vercel.app/" target="_blank" class="prj-name-link">
+                  Museum App
+                </a>
+                <img src="github_blue.svg" id="githubIcon" class="github-icon" alt="Front-end"
+                  onclick="window.open('https://github.com/kliu57/museum-app', '_blank');" />
+                <img src="github_purple.svg" id="githubIcon" class="github-icon" alt="Back-end"
+                  onclick="window.open('https://github.com/kliu57/user-api', '_blank');" />
+              </h2>
+              <ul class="prj-details">
+                <li>Browse works of the Metropolitan Museum of Art!</li>
+                <li>Advanced search and user authentication</li>
+                <li>
+                  Tech stack: MongoDB, JavaScript, CSS, Next.js, Bootstrap
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="prj-list">
+            <section class="prj" id="prjLeftBox">
+              <img src="proj_frag.png" />
+            </section>
+            <section class="prj" id="prjRightBox">
+              <h2 class="prj-name">
+                Fragments Web App&emsp13;
+                <img src="github_blue.svg" id="githubIcon" class="github-icon" alt="Front-end"
+                  onclick="window.open('https://github.com/kliu57/fragments-ui', '_blank');" />
+                <img src="github_purple.svg" id="githubIcon" class="github-icon" alt="Back-end"
+                  onclick="window.open('https://github.com/kliu57/fragments', '_blank');" />
+              </h2>
+              <ul class="prj-details">
+                <li>
+                  Back-end microservice which supports storage of files and
+                  images and conversion between file types!
+                </li>
+                <li>
+                  No longer hosted on AWS, see
+                  <a href="https://www.youtube.com/watch?v=7vrPdRUhQzw" target="_blank">Video Walkthrough</a>
+                </li>
+                <li>Tech stack: Node.js, JavaScript, React, AWS</li>
+              </ul>
+            </section>
+          </div>
+          <div class="prj-list">
+            <section class="prj" id="prjLeftBox">
+              <a href="https://dia-ui.firebaseapp.com/" target="_blank">
+                <img src="proj_diabetes.png" />
+              </a>
+            </section>
+            <section class="prj" id="prjRightBox">
+              <h2 class="prj-name">
+                <a href="https://dia-ui.firebaseapp.com/" target="_blank" class="prj-name-link">
+                  Diabetes Risk Survey App
+                </a>
+              </h2>
+              <ul class="prj-details">
+                <li>2023 Smart Cities Hackathon - Finalist</li>
+                <li>Calculates risk of diabetes & generates reports</li>
+                <li>Tech stack: JavaScript, CSS, Angular, MUI, Firebase</li>
+              </ul>
+            </section>
+          </div>
+          <div class="prj-list">
+            <section class="prj" id="prjLeftBox">
+              <a href="https://driver-quiz-buddy.vercel.app/" target="_blank">
+                <img src="proj_drive.png" />
+              </a>
+            </section>
+            <section class="prj" id="prjRightBox">
+              <h2 class="prj-name">
+                <a href="https://driver-quiz-buddy.vercel.app/" target="_blank" class="prj-name-link">
+                  Driving Quiz Web App
+                </a>
+                <img src="github_blue.svg" id="githubIcon" class="github-icon" alt="GitHub"
+                  onclick="window.open('https://github.com/kliu57/DriverQuizBuddy', '_blank');" />
+              </h2>
+              <ul class="prj-details">
+                <li>Interactive quiz to help kids study for G1 exam!</li>
+                <li>Tech stack: Node.js, TypeScript, Angular, SCSS</li>
+              </ul>
+            </section>
+          </div>
+          <div class="prj-list">
+            <section class="prj" id="prjLeftBox">
+              <a href="https://kliu57-wa-web524-a6.azurewebsites.net/Shows" target="_blank">
+                <img src="proj_shows.png" />
+              </a>
+            </section>
+            <section class="prj" id="prjRightBox">
+              <h2 class="prj-name">
+                <a href="https://kliu57-wa-web524-a6.azurewebsites.net/Shows" target="_blank" class="prj-name-link">
+                  TV Shows Web App
+                </a>
+              </h2>
+              <ul class="prj-details">
+                <li>Online collection of TV Shows!</li>
+                <li>Manage shows, actors, episodes, and user accounts</li>
+                <li>Tech stack: C#, ASP.NET MVC, Azure, CSS</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <!-- ABOUT ME PAGE - HIDDEN UNTIL MENU LINK IS CLICKED -->
+        <div id="about" class="content-region hide">
+          <div class="abt-list">
+            <section class="abt">
+              <p>
+                I'm Katie Liu, a junior developer interested in full stack
+                development and building enterprise web applications!
+              </p>
+              <p>
+                I have experience working at Fidelity Clearing Canada in
+                automated testing, as well as writing scripts at Guru Studio
+                and DHX Studios.
+              </p>
+              <p>
+                I recently graduated with a Diploma from Seneca and I am
+                working towards my Bachelor's. These days my time is spent
+                studying and coding.
+              </p>
+              <p>In my spare time I enjoy badminton, chess, and karaoke.</p>
+            </section>
+            <section class="abt">
+              <h2 class="abt-tech">Programming languages</h2>
+              <div class="abt-tech-details">
+                <ul>
+                  <li>Javascript</li>
+                  <li>CSS</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>SQL</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                  <li>TypeScript</li>
+                  <li>Bash</li>
                 </ul>
-              </section>
-            </div>
-          </div>
-          <div id="diplomaPopup" class="popup-overlay" style="display: none">
-            <div class="popup-content">
-              <button class="close-button" onclick="closeDiplomaPopup();">
-                &times;
-              </button>
-              <img src="diploma.png" alt="Diploma" />
-            </div>
-          </div>
-
-          <!-- CONTACT ME PAGE - HIDDEN UNTIL MENU LINK IS CLICKED -->
-          <div id="contact" class="content-region hide">
-            <h2>Contact Me</h2>
-
-            <!-- validate using JS event listener that message contents are not empty spaces and only submit if validation passes -->
-            <!-- rest of fields are validated through regex -->
-            <form
-              action="https://formspree.io/f/meqykbra"
-              method="POST"
-              name="contactform"
-              id="contactform"
-            >
-              <div class="contact-form-group">
-                <label for="name">Your name</label>
-                <div>
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder="name"
-                    name="name"
-                    size="30"
-                    tabindex="1"
-                    pattern="(.|\s)*\S(.|\s)*"
-                    title="Must not be blank"
-                    required
-                  />
-                </div>
               </div>
-
-              <div class="contact-form-group">
-                <label for="email">Your email address</label>
-                <div>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="email"
-                    name="email"
-                    autocomplete="email"
-                    size="30"
-                    maxlength="320"
-                    tabindex="2"
-                    required
-                  />
-                </div>
+              <h2 class="abt-tech">Tech &amp; Frameworks</h2>
+              <div class="abt-tech-details">
+                <ul>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                  <li>Next.js</li>
+                  <li>Angular</li>
+                  <li>AWS</li>
+                  <li>Azure</li>
+                  <li>Visual Studios</li>
+                  <li>Excel</li>
+                </ul>
               </div>
-
-              <div class="contact-form-group">
-                <label for="message">Your message</label>
-                <div>
-                  <textarea
-                    id="message"
-                    placeholder="message"
-                    name="message"
-                    rows="6"
-                    maxlength="3000"
-                    tabindex="9"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-
-              <div class="contact-form-group">
-                <div class="button">
-                  <button id="submit-form" type="submit" tabindex="10">
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </form>
+            </section>
           </div>
+        </div>
+
+        <!-- EDUCATION PAGE - HIDDEN UNTIL MENU LINK IS CLICKED -->
+        <div id="education" class="content-region hide">
+          <div class="edu-list">
+            <section class="edu" id="leftBox">
+              <a href="#" onclick="showDiplomaPopup(); return false;">
+                <img src="diploma.png" id="diplomaImage" alt="Diploma from Seneca Polytechnic" />
+              </a>
+            </section>
+            <section class="edu" id="rightBox">
+              <h2 class="edu-name">
+                Computer Programming & Analysis<br />2021&ndash;2024
+              </h2>
+              <ul class="edu-details">
+                <li>President's Honour List for five semesters</li>
+                <li>2022 MBNA scholarship</li>
+                <li>2021 Badminton Varsity Athletic Scholarship</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div id="diplomaPopup" class="popup-overlay" style="display: none">
+          <div class="popup-content">
+            <button class="close-button" onclick="closeDiplomaPopup();">
+              &times;
+            </button>
+            <img src="diploma.png" alt="Diploma" />
+          </div>
+        </div>
+
+        <!-- CONTACT ME PAGE - HIDDEN UNTIL MENU LINK IS CLICKED -->
+        <div id="contact" class="content-region hide">
+          <h2>Contact Me</h2>
+
+          <!-- validate using JS event listener that message contents are not empty spaces and only submit if validation passes -->
+          <!-- rest of fields are validated through regex -->
+          <form action="https://formspree.io/f/meqykbra" method="POST" name="contactform" id="contactform">
+            <div class="contact-form-group">
+              <label for="name">Your name</label>
+              <div>
+                <input type="text" id="name" placeholder="name" name="name" size="30" tabindex="1"
+                  pattern="(.|\s)*\S(.|\s)*" title="Must not be blank" required />
+              </div>
+            </div>
+
+            <div class="contact-form-group">
+              <label for="email">Your email address</label>
+              <div>
+                <input id="email" type="email" placeholder="email" name="email" autocomplete="email" size="30"
+                  maxlength="320" tabindex="2" required />
+              </div>
+            </div>
+
+            <div class="contact-form-group">
+              <label for="message">Your message</label>
+              <div>
+                <textarea id="message" placeholder="message" name="message" rows="6" maxlength="3000" tabindex="9"
+                  required></textarea>
+              </div>
+            </div>
+
+            <div class="contact-form-group">
+              <div class="button">
+                <button id="submit-form" type="submit" tabindex="10">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
