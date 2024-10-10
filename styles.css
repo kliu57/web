@@ -656,12 +656,14 @@ button:focus {
     font-size: 1.2em;
     padding: 0;
     width: 100%;
+    hyphens: auto;
   }
 
   .prj-details li {
     width: 100%;
     word-wrap: break-word;
     hyphens: auto;
+    
   }
 
   .contact-form-group input {
@@ -674,19 +676,18 @@ button:focus {
 
   .abt-list {
     flex-direction: column;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0;
+    margin: 0;
   }
 
   .abt h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    padding: 0;
-    margin: 15px 0;
-    white-space: nowrap;
+  .abt h2,
+  .abt h3,
+  .abt h4,
+  .abt h5,
+  .abt h6, .abt p {
+    padding: 0 20px 0 20px ;
+    margin: 10px 0;
   }
 
   .abt-tech-details {
