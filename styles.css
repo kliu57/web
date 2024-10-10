@@ -449,6 +449,10 @@ th {
     max-width: 0px;
   }
 
+  .contact-form-group input {
+    width: 100%;
+  }
+
   .contact-form-group textarea {
     width: 100%;
   }
