@@ -333,6 +333,25 @@ hr {
   border-radius: 10px;
   overflow: hidden;
   background-color: rgba(25, 27, 29, 0.6);
+  padding-left: 25px;
+  padding-top: 0px;
+  margin-top: 0;
+}
+
+.abt h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 13px;
+  margin-bottom: 1rem;
+}
+
+.abt p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-top: 17px;
 }
 
 .abt {
@@ -340,6 +359,7 @@ hr {
   color: #d6d3d3;
   height: 100%;
   width: 55%;
+  align-items: flex-start;
 }
 
 .abt+.abt {
@@ -441,21 +461,6 @@ th {
 .contact-form-group {
   padding-top: 8px;
   padding-bottom: 10px;
-}
-
-@media (max-width: 590px) {
-  #prjLeftBox {
-    height: 100%;
-    max-width: 0px;
-  }
-
-  .contact-form-group input {
-    width: 100%;
-  }
-
-  .contact-form-group textarea {
-    width: 100%;
-  }
 }
 
 textarea {
@@ -603,7 +608,6 @@ button:focus {
   transition: filter 0.3s ease;
 }
 
-
 /* Make font smaller for smaller screens */
 @media (max-width: 810px) {
   .prj-name {
@@ -632,6 +636,47 @@ button:focus {
   #leftBox {
     height: 100%;
     max-width: 230px;
+  }
+
+  #prjLeftBox {
+    height: 100%;
+    max-width: 0px;
+  }
+
+  .contact-form-group input {
+    width: 100%;
+  }
+
+  .contact-form-group textarea {
+    width: 100%;
+  }
+
+  .abt-list {
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .abt h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 0;
+    margin: 15px 0;
+    white-space: nowrap;
+  }
+
+  .abt-tech-details {
+    padding: 0;
+    margin: 0;
+  }
+
+  .abt {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
   }
 }
 
