@@ -443,6 +443,17 @@ th {
   padding-bottom: 10px;
 }
 
+@media (max-width: 590px) {
+  #prjLeftBox {
+    height: 100%;
+    max-width: 0px;
+  }
+
+  .contact-form-group textarea {
+    width: 100%;
+  }
+}
+
 textarea {
   width: 400px;
   height: 150px;
