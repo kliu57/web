@@ -117,17 +117,10 @@ html {
   background-size: cover;
 }
 
-header,
 #content,
 footer {
   background: rgba(0, 0, 0, 0.8);
   padding: 25px;
-}
-
-/* the part above the main menu links */
-header {
-  text-align: center;
-  letter-spacing: 0.12rem;
 }
 
 footer {
@@ -171,7 +164,7 @@ hr {
   border-bottom-left-radius: 10px;
 }
 
-.edu+.edu {
+.edu + .edu {
   text-align: left;
   flex-grow: 1;
 }
@@ -247,7 +240,7 @@ hr {
   border-bottom-left-radius: 10px;
 }
 
-.prj+.prj {
+.prj + .prj {
   text-align: left;
   flex-grow: 1;
 }
@@ -362,7 +355,7 @@ h6 {
   align-items: flex-start;
 }
 
-.abt+.abt {
+.abt + .abt {
   width: 45%;
 }
 
@@ -698,7 +691,8 @@ button:focus {
   .abt h4,
   .abt h5,
   .abt h6,
-  .abt p, .abt ul {
+  .abt p,
+  .abt ul {
     padding: 0 20px 0 20px;
     margin: 10px 0;
   }
@@ -727,4 +721,140 @@ button:focus {
     height: 100%;
     max-width: 0px;
   }
+}
+
+/* Text Animation */
+#greeting span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+#greeting span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+#greeting span:nth-child(3) {
+  animation-delay: 0.55s;
+}
+
+#greeting span:nth-child(4) {
+  animation-delay: 0.95s;
+}
+
+#greeting span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+#greeting span:nth-child(6) {
+  animation-delay: 1.15s;
+}
+
+#greeting span:nth-child(7) {
+  animation-delay: 1.2s;
+}
+
+#greeting span:nth-child(8) {
+  animation-delay: 1.25s;
+}
+
+#greeting span:nth-child(9) {
+  animation-delay: 1.27s;
+}
+
+@keyframes pop-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  25% {
+    transform: translateY(30%);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(13%);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+
+  87.5% {
+    transform: translateY(13%);
+    opacity: 1;
+  }
+
+  98% {
+    transform: translateY(55%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(50%);
+    opacity: 1;
+  }
+}
+
+header {
+  text-align: center;
+  letter-spacing: 0.12rem;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+header img.center {
+  margin-bottom: -40px;
+  margin-top: 15px;
+}
+
+#greeting span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(200%);
+}
+
+#header p {
+  line-height: 1.64;
+}
+
+#header h1 {
+  overflow: hidden;
+  padding: 28px 0;
+  height: 30px;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  letter-spacing: 0.13rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+#header h1#greeting {
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 30px;
+  height: 55px;
+  /* height of entire anim */
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+#header h1 span {
+  display: inline-block;
+  transform: translateY(100%);
+  animation: pop-up 0.4s ease forwards;
+}
+
+img.center {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
 }

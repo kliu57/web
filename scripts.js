@@ -18,6 +18,21 @@ window.onload = function () {
   // clear the contact me form
   form.reset();
 
+  // Animation for greeting
+  let greeting = document.getElementById("greeting");
+  if (greeting) {
+    animateGreeting(greeting);
+  }
+
+  function animateGreeting(greetingElement) {
+    const chars = greetingElement.querySelectorAll("span");
+    chars.forEach((char, index) => {
+      // Delay computation to create the wave effect
+      let delay = index * 100; // Increase or decrease for faster or slower wave
+      char.style.animationDelay = delay + "ms";
+    });
+  }
+
   // Add event listener to contact me form, stop form from submitting if message
   // is blank or only contains spaces
   form.addEventListener("submit", function (e) {
