@@ -663,7 +663,6 @@ button:focus {
     width: 100%;
     word-wrap: break-word;
     hyphens: auto;
-    
   }
 
   .contact-form-group input {
@@ -685,8 +684,9 @@ button:focus {
   .abt h3,
   .abt h4,
   .abt h5,
-  .abt h6, .abt p {
-    padding: 0 20px 0 20px ;
+  .abt h6,
+  .abt p {
+    padding: 0 20px 0 20px;
     margin: 10px 0;
   }
 
