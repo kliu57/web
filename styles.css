@@ -393,7 +393,10 @@ h6 {
 
 .abt ul {
   list-style-type: none;
-  padding: 0;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   margin: 0;
 }
 
