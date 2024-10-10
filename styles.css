@@ -639,8 +639,29 @@ button:focus {
   }
 
   #prjLeftBox {
-    height: 100%;
-    max-width: 0px;
+    height: 0;
+    max-width: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  #prjRightBox {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  .prj-name {
+    word-wrap: break-word;
+    font-size: 1.2em;
+    padding: 0;
+    width: 100%;
+  }
+
+  .prj-details li {
+    width: 100%;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 
   .contact-form-group input {
